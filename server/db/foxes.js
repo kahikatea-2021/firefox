@@ -7,19 +7,26 @@ function getFoxes (db = connection) {
     })
 }
 
-function getFoxesById (id, db = connection) {
-  return db('foxes')
-    .join('extinguisher', 'extinguisher_id', 'extinguisher.id')
-    .where('id', id)
-    .select('name', 'description', 'extinguisher.id', 'iconbig')
+function getExtinguishers (db = connection) {
+  return db('extinguishers')
     .then(result => {
       return result
     })
 }
 
+// function getFoxesById (id, db = connection) {
+//   return db('foxes')
+//     .join('extinguishers', 'extinguisher_id', 'extinguisher.id')
+//     .where('id', id)
+//     .select('name', 'description', 'extinguisher.id', 'iconbig')
+//     .then(result => {
+//       return result
+//     })
+// }
+
 module.exports = {
   getFoxes,
-  getFoxesById
+  getExtinguishers
 }
 // function getFruits (db = connection) {
 //   return db('fruit').select()
