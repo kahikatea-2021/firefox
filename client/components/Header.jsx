@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function Header () {
-    reutrn (
-        <h1>THIS IS THE HEADER COMPONENT</h1>
-    )
+function Header () {
+  return (
+    <h1>THIS IS THE HEADER COMPONENT</h1>
+  )
 }
+
+export default Header

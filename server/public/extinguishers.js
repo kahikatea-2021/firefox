@@ -1,4 +1,4 @@
-  {([{
+{([{
     "id": 1,
     "name": "Fire Blanket",
     "description": "Fire blankets work on a simple principle: smother the fire and deprive it of oxygen. Using a fire blanket lowers this risk. FIRST, turn off the source of heat, if possible. A quality fire blanket will have straps to help you wrap your hands up completely to protect them. You must quickly drape the fire blanket over the fire without throwing it or fanning the flames. Once it’s on, leave it in place until you’re certain the fire is out. ",
@@ -56,7 +56,6 @@
     "description": "Scientists have discovered that your brain responds the same way to eating ice cream to listening to your favourite music or winning the lottery.",
     "icon": "./images/extinguishers/iceCream.png"
   },
-
 
 ])
 }

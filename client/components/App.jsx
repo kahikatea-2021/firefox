@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
-
-import { fetchFruits } from '../actions'
+import { fetchFoxes } from '../actions'
 
 import Header from './Header'
 import Foxes from './Foxes'
@@ -10,25 +9,27 @@ import Footer from './Footer'
 
 function App (props) {
   useEffect(() => {
-    props.dispatch(fetchFruits())
+    props.dispatch(fetchFoxes())
   }, [])
 
   return (
     <>
-      <div className='app'>
-        <h1>Fullstack Boilerplate - with Fruits!</h1>
-        <ul>
-          {props.fruits.map(fruit => (
-            <li key={fruit}>{fruit}</li>
+      {/* <div className='app'> */}
+      <Header />
+      <Foxes />
+      <Footer />
+      {/* <ul>
+          {props.foxes.map(fox => (
+            <li key={fox}>{fox}</li>
           ))}
-        </ul>
-      </div>
+        </ul> */}
+      {/* </div> */}
     </>
   )
 }
 const mapStateToProps = (globalState) => {
   return {
-    fruits: globalState.fruits
+    foxes: globalState.foxes
   }
 }
 

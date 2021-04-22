@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function Foxes () {
-    reutrn (
-        <h1>THIS IS THE FOXES COMPONENT</h1>
-    )
+function Foxes () {
+  return (
+    <h1>THIS IS THE FOXES COMPONENT</h1>
+  )
 }
+
+export default Foxes
