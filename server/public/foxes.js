@@ -35,7 +35,7 @@
   "id": 5,
   "name": "Kaylin",
   "description": "Invovle combustible cooking media such as oils and grease commonly found in kitchens",
-  "extinguisher_id":[1,2,3,5,6],
+  "extinguisher_id":[1,2, 3, 5,],
   "iconsmall": "./images/foxes/kaylin.png",
   "iconbig": "./images/foxes/kaylinBig.png"
 },
@@ -44,7 +44,6 @@
   "id": 6,
   "name": "Eden",
   "description": "Involves high tension environments with potential sadness and annoyance." ,
-  "extinguisher_id":[7,8,9],
   "iconsmall": "./images/foxes/eden.png",
   "iconbig": "./images/foxes/edenBig.png"
 },
