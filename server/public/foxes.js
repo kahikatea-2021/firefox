@@ -44,7 +44,6 @@
   "id": 6,
   "name": "Eden",
   "description": "Involves high tension environments with potential sadness and annoyance." ,
-  "extinguisher_id":[7,8,9],
   "iconsmall": "./images/foxes/eden.png",
   "iconbig": "./images/foxes/edenBig.png"
 },
