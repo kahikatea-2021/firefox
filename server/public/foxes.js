@@ -34,7 +34,7 @@
 {
   "id": 5,
   "name": "Kaylin",
-  "description": "Invovle combustible cooking media such as oils and grease commonly found in kitchens",
+  "description": "Involve combustible cooking media such as oils and grease commonly found in kitchens",
   "extinguisher_id":[1,2,3,5,6],
   "iconsmall": "./images/foxes/kaylin.png",
   "iconbig": "./images/foxes/kaylinBig.png"
