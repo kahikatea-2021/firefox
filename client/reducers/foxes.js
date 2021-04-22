@@ -1,11 +1,11 @@
-import { SET_FRUITS } from '../actions'
+import { SET_FOXES } from '../actions'
 
 const initialState = []
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case SET_FRUITS:
-      return action.fruits
+    case SET_FOXES:
+      return action.foxes
     default:
       return state
   }

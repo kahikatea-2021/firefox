@@ -1,7 +1,13 @@
 import React from 'react'
 
-export default function Footer () {
-    reutrn (
-        <h1>THIS IS THE FOOTER COMPONENT</h1>
-    )
+function Footer () {
+  return (
+    <h1>IF YOU SEE SMOKE OR FIRE AND BELIEVE THERE IS A RISK TO PEOPLE OR PROPERTY,
+        CALL 111 AND ASK FOR &apos;FIRE&apos; IMMEDIATELY. PLEASE USE A FIRE EXTINGUISHER IF ON HAND.
+        WE ARE ONLY DISPLAYING ALTERNATIVE EXTINGUISHERS WHEN YOU DO NOT HAVE ACCESS TO ONE.
+        IF IN DOUBT, CALL 111.
+    </h1>
+  )
 }
+
+export default Footer
