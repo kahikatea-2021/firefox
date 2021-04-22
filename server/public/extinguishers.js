@@ -50,6 +50,12 @@
     "description": "Granted, it’s easy to get frustrated in these situations. Especially when you feel like other people are dropping the ball. But, sometimes it is what it is. And, as a well rounded individual, there will be moments where you need to step up regardless of whose fault it is.",
     "icon": "./images"
   },
+  {
+    "id": 9,
+    "name": "Ice Cream",
+    "description": "Scientists have discovered that your brain responds the same way to eating ice cream to listening to your favourite music or winning the lottery."
+  },
+
 
 ])
 }
