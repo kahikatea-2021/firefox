@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 
-// import Header from './Header'
-// import Foxes from './Foxes'
-// import Fox from './Fox'
-// import Footer from './Footer'
+import Header from './Header'
+import Foxes from './Foxes'
+import Fox from './Fox'
+import Footer from './Footer'
 import { fetchExtinguishers, fetchFoxes } from '../apis/apiHelper'
 
 function App (props) {
@@ -16,7 +16,9 @@ function App (props) {
 
   return (
     <>
-
+      <Header />
+      <Foxes />
+      <Footer />
     </>
   )
 }
