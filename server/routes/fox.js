@@ -4,7 +4,6 @@ const db = require('../db/foxes')
 
 const router = express.Router()
 
-// GET foxes
 router.get('/', (req, res) => {
   db.getFoxes()
     .then(results => {
@@ -17,11 +16,10 @@ router.get('/', (req, res) => {
     })
 })
 
-// GET foxes by ID
-router.get('/:id', (req, res) => {
-  db.getFoxesById()
+router.get('/extinguishers', (req, res) => {
+  db.getExtinguishers()
     .then(results => {
-      res.json({ foxes: results.map(fox => fox.id) })
+      res.json({ extinguisher: results })
       return null
     })
     .catch(err => {
@@ -29,8 +27,9 @@ router.get('/:id', (req, res) => {
       res.status(500).json({ message: 'Somthing went wrong' })
     })
 })
-
 module.exports = router
+
+// db.getExtinguishers()
 
 // const express = require('express')
 
