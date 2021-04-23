@@ -20,7 +20,7 @@ function Header () {
       <nav className="mr-16">
         <ul className="list-reset md:flex md:items-center">
           <li className="md:ml-4 ">
-            <a className="block rounded-lg py-2 px-8 bg-orange-med hover:bg-orange-dark shadow-2xl no-underline text-orange-dark hover:text-orange-med hover: no-underline md:border-none" href="#">
+            <a className="block rounded-lg py-2 px-8 bg-orange-med hover:bg-orange-dark shadow-2xl no-underline text-orange-dark hover:text-orange-med hover: no-underline md:border-none" href="https://www.youtube.com/watch?v=jofNR_WkoCE" target="blank">
                             FOXES
             </a>
           </li>
