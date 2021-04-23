@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
+import { Route } from 'react-router-dom'
 
 import Header from './Header'
 import Foxes from './Foxes'
@@ -12,12 +13,13 @@ function App (props) {
     fetchFoxes(props.dispatch)
     fetchExtinguishers(props.dispatch)
   }, [])
-  
+
   return (
     <>
-      <Header />
-      <Foxes />
-      <Footer />
+      <Route path='/' component={Header} />
+      <Route exact path='/' component={Foxes} />
+      <Route exact path='/:id' component={Fox} />
+      <Route path='/' component={Footer} />
     </>
   )
 }
