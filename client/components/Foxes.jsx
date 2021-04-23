@@ -1,35 +1,29 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-function Foxes () {
+function Foxes (props) {
+  console.log(props.foxes)
   return (
     <>
-      <h1>THIS IS THE FOXES COMPONENT</h1>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
+      <div className="flex inline-flex">
+        {props.foxes.map(fox => (
+          <div key={fox.id}>
+            <a className="1/3 m-8"link>
+              <img className=""src={fox.iconsmall}></img>
+              <h1 className="text-center text-orange-dark">{fox.name}</h1>
+            </a>
+          </div>
+
+        ))}
+
+      </div>
     </>
   )
 }
+const mapStateToProps = (globalState) => {
+  return {
+    foxes: globalState.foxes
+  }
+}
 
-export default Foxes
+export default connect(mapStateToProps)(Foxes)

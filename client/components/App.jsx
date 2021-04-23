@@ -12,8 +12,7 @@ function App (props) {
     fetchFoxes(props.dispatch)
     fetchExtinguishers(props.dispatch)
   }, [])
-  console.log('props', props)
-
+  
   return (
     <>
       <Header />
