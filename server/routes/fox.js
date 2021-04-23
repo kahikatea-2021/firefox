@@ -16,6 +16,18 @@ router.get('/', (req, res) => {
     })
 })
 
+router.get('/extinguishers', (req, res) => {
+  db.getExtinguishers()
+    .then(results => {
+      res.json({ extinguisher: results })
+      return null
+    })
+    .catch(err => {
+      console.log(err)
+      res.status(500).json({ message: 'Somthing went wrong' })
+    })
+})
+
 module.exports = router
 
 // db.getExtinguishers()
