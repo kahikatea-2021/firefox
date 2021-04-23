@@ -36,6 +36,7 @@ export function fetchFoxes (dispatch) {
 export function fetchExtinguishers (dispatch) {
     return getExtinguishers()
     .then(extinguisher => {
+        console.log('helper', extinguisher)
         dispatch(setExtinguishers(extinguisher))
         return null
     })

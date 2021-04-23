@@ -9,6 +9,7 @@ export function setFoxes (foxes) {
 }
 
 export function setExtinguishers (extinguishers) {
+  console.log('index', extinguishers)
   return {
     type: SET_EXTINGUISHERS,
     extinguishers
