@@ -12,6 +12,7 @@ function App (props) {
     fetchFoxes(props.dispatch)
     fetchExtinguishers(props.dispatch)
   }, [])
+  
   return (
     <>
       <Header />
@@ -22,7 +23,8 @@ function App (props) {
 }
 const mapStateToProps = (globalState) => {
   return {
-    foxes: globalState.foxes
+    foxes: globalState.foxes,
+    extinguishers: globalState.extinguishers
   }
 }
 
