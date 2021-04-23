@@ -1,20 +1,16 @@
-import { getFruits } from '../apis/fruits'
+export const SET_FOXES = 'SET_FOXES'
+export const SET_EXTINGUISHERS = 'SET_EXTINGUISHERS'
 
-export const SET_FRUITS = 'SET_FRUITS'
-
-export function setFruits (fruits) {
+export function setFoxes (foxes) {
   return {
-    type: SET_FRUITS,
-    fruits
+    type: SET_FOXES,
+    foxes
   }
 }
 
-export function fetchFruits () {
-  return dispatch => {
-    return getFruits()
-      .then(fruits => {
-        dispatch(setFruits(fruits))
-        return null
-      })
+export function setExtinguishers (extinguishers) {
+  return {
+    type: SET_EXTINGUISHERS,
+    extinguishers
   }
 }
