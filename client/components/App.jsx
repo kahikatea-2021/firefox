@@ -1,29 +1,22 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
-import { fetchFoxes } from '../actions'
 
-import Header from './Header'
-import Foxes from './Foxes'
+// import Header from './Header'
+// import Foxes from './Foxes'
 // import Fox from './Fox'
-import Footer from './Footer'
+// import Footer from './Footer'
+import { fetchExtinguishers, fetchFoxes } from '../apis/apiHelper'
 
 function App (props) {
   useEffect(() => {
-    props.dispatch(fetchFoxes())
+    fetchFoxes(props.dispatch)
+    fetchExtinguishers(props.dispatch)
   }, [])
+  console.log(props)
 
   return (
     <>
-      {/* <div className='app'> */}
-      <Header />
-      <Foxes />
-      <Footer />
-      {/* <ul>
-          {props.foxes.map(fox => (
-            <li key={fox}>{fox}</li>
-          ))}
-        </ul> */}
-      {/* </div> */}
+
     </>
   )
 }

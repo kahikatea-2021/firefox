@@ -1,6 +1,5 @@
-import { getFoxes } from '../apis/foxes'
-
 export const SET_FOXES = 'SET_FOXES'
+export const SET_EXTINGUISHERS = 'SET_EXTINGUISHERS'
 
 export function setFoxes (foxes) {
   return {
@@ -9,12 +8,9 @@ export function setFoxes (foxes) {
   }
 }
 
-export function fetchFoxes () {
-  return dispatch => {
-    return getFoxes()
-      .then(efoxs => {
-        dispatch(setFoxes(efoxs))
-        return null
-      })
+export function setExtinguishers (extinguishers) {
+  return {
+    type: SET_EXTINGUISHERS,
+    extinguishers
   }
 }

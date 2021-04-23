@@ -1,4 +1,4 @@
-import { SET_FOXES } from '../actions'
+import { SET_FOXES } from '../actions/index'
 
 const initialState = []
 
